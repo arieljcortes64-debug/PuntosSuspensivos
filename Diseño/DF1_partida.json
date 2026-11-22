@@ -1,0 +1,541 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794884844735",
+          "selected": false,
+          "running": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assign_1794884844735": {
+          "id": "assign_1794884844735",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "choise:=\" \"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794884884069",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794884884069": {
+          "id": "loop_1794884884069",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "choise == \"Salir\"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "beforeId": null,
+          "afterId": "input_1794884924885",
+          "selected": false,
+          "running": false
+        },
+        "input_1794884924885": {
+          "id": "input_1794884924885",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "Choise",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794884969551",
+          "selected": false,
+          "prompt": "\"Eliga entre <Jugar> o <Salir>\"",
+          "running": false
+        },
+        "loop_1794884969551": {
+          "id": "loop_1794884969551",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "choise != \"Salir\" or choise != \"Jugar\"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794885069246",
+          "beforeId": null,
+          "afterId": "input_1794885038550",
+          "selected": false,
+          "running": false
+        },
+        "input_1794885038550": {
+          "id": "input_1794885038550",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "choise",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "prompt": "\"Entrada incorrecta! Eliga entre <Jugar> o <Salir>",
+          "running": false
+        },
+        "select_1794885069246": {
+          "id": "select_1794885069246",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "choise == \"Jugar\"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "assignment_1794885102082",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794885102082": {
+          "id": "assignment_1794885102082",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_ID:=0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885105215",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885105215": {
+          "id": "assign_1794885105215",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_ID:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885109262",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885109262": {
+          "id": "assign_1794885109262",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_lifes:=3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885233331",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885233331": {
+          "id": "assign_1794885233331",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_lifes:=3",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885269146",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885269146": {
+          "id": "assign_1794885269146",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_posx:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885304697",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885304697": {
+          "id": "assign_1794885304697",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_posy:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885322713",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885322713": {
+          "id": "assign_1794885322713",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_posx:=9",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885368912",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885368912": {
+          "id": "assign_1794885368912",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_posy:=9",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885509565",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885509565": {
+          "id": "assign_1794885509565",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_shoot:=\" \"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794885530943",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794885530943": {
+          "id": "assign_1794885530943",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_shoot:=\" \"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794885548935",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794885548935": {
+          "id": "loop_1794885548935",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "player1_lifes <= 0 or player2_lifes <= 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794887958498",
+          "beforeId": null,
+          "afterId": "input_1794887642159",
+          "selected": false,
+          "running": false
+        },
+        "input_1794887642159": {
+          "id": "input_1794887642159",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player1_shoot",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794887711993",
+          "selected": false,
+          "prompt": "\"El player 1 dispara, ¿este impacto con el jugador 2? <Si> | <No>\"",
+          "running": false
+        },
+        "select_1794887711993": {
+          "id": "select_1794887711993",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "player1_shoot == \"Si\"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1794887788661",
+          "yesId": "assignment_1794887757211",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794887757211": {
+          "id": "assignment_1794887757211",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_lifes:=player2_lifes - 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "input_1794887788661": {
+          "id": "input_1794887788661",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player2_shoot",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794887860929",
+          "selected": false,
+          "prompt": "\"El player 2, ¿este impacto con el jugador 1? <Si> | <No>\"",
+          "running": false
+        },
+        "select_1794887860929": {
+          "id": "select_1794887860929",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "player2_shoot == \"Si\"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "assignment_1794887875930",
+          "noId": null,
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794887875930": {
+          "id": "assignment_1794887875930",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_lifes:=player1_lifes - 1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794887958498": {
+          "id": "select_1794887958498",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "player2_lifes == 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "output_1794887974756",
+          "noId": "output_1794888007124",
+          "selected": true,
+          "running": false
+        },
+        "output_1794887974756": {
+          "id": "output_1794887974756",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Player 1 gana!\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": true,
+          "running": false
+        },
+        "output_1794888007124": {
+          "id": "output_1794888007124",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Player 2 gana!\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": true,
+          "running": false
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}

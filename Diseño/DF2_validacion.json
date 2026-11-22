@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "tabs": [
+    {
+      "id": "main",
+      "name": "main",
+      "type": "main"
+    }
+  ],
+  "selectedTabId": "main",
+  "docsByTab": {
+    "main": {
+      "nodes": {
+        "start": {
+          "id": "start",
+          "type": "Oval",
+          "text": "start",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794906003594",
+          "selected": false,
+          "running": false
+        },
+        "assign1": {
+          "id": "assign1",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "is_player1_gun:=True",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794905623602",
+          "selected": false,
+          "running": false
+        },
+        "end": {
+          "id": "end",
+          "type": "Oval",
+          "text": "end",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "assign_1794905623602": {
+          "id": "assign_1794905623602",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "is_player2_gun:=True",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794905653926",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794905653926": {
+          "id": "assign_1794905653926",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_posx:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794905672014",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794905671601": {
+          "id": "assignment_1794905671601",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_posy:=9",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794906742866",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794905671758": {
+          "id": "assignment_1794905671758",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_posy:=1",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794905671601",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794905672014": {
+          "id": "assignment_1794905672014",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_posx:=9",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assignment_1794905671758",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794905717269": {
+          "id": "loop_1794905717269",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "loopMov == True",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794906177557",
+          "beforeId": null,
+          "afterId": "input_1794905837618",
+          "selected": false,
+          "running": false
+        },
+        "input_1794905837618": {
+          "id": "input_1794905837618",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player1_posx",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1794905866070",
+          "selected": false,
+          "prompt": "\"Inserte la posicion en x del player 1\"",
+          "running": false
+        },
+        "input_1794905866070": {
+          "id": "input_1794905866070",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player1_posy",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1794905869544",
+          "selected": false,
+          "prompt": "\"Inserte la posicion en y del player 1\"",
+          "running": false
+        },
+        "input_1794905869544": {
+          "id": "input_1794905869544",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player2_posx",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1794905893672",
+          "selected": false,
+          "prompt": "\"Inserte la posicion en x del player 2\"",
+          "running": false
+        },
+        "input_1794905893672": {
+          "id": "input_1794905893672",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player2_posy",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "select_1794906713550",
+          "selected": false,
+          "prompt": "\"Inserte la posicion en y del player 2\"",
+          "running": false
+        },
+        "assign_1794906003594": {
+          "id": "assign_1794906003594",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player1_input:=\" \"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794906014119",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794906014119": {
+          "id": "assign_1794906014119",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "player2_input:=\" \"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign1",
+          "selected": false,
+          "running": false
+        },
+        "loop_1794906177557": {
+          "id": "loop_1794906177557",
+          "type": "Diamond",
+          "kind": "Loop",
+          "text": "loopInput == True",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "output_1794906977647",
+          "beforeId": null,
+          "afterId": "input_1794906569679",
+          "selected": false,
+          "running": false
+        },
+        "selection_1794906405376": {
+          "id": "selection_1794906405376",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "player1_input == \" \" or player1_input == \"W\" or player1_input == \"A\" or player1_input == \"S\" or player1_input == \"D\" or player1_input == \"E\" or player1_input == \"Q\" or player1_input == \"ClickIzq\" or player1_input == \"ESQ\" or player2_input == \" \" or player2_input == \"W\" or player2_input == \"A\" or player2_input == \"S\" or player2_input == \"D\" or player2_input == \"E\" or player2_input == \"Q\" or player2_input == \"ClickIzq\" or player2_input == \"ESQ\"",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "assignment_1794906619987",
+          "noId": "output_1794906630711",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794906424400": {
+          "id": "assign_1794906424400",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "loopInput:=False",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "loop_1794905717269",
+          "selected": false,
+          "running": false
+        },
+        "input_1794906551951": {
+          "id": "input_1794906551951",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player2_input",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "selection_1794906405376",
+          "selected": false,
+          "prompt": "\"Acción del jugador 2: <W, A, S, D, E, Q, ESQ, Click Izquierdo>: \"",
+          "running": false
+        },
+        "input_1794906569679": {
+          "id": "input_1794906569679",
+          "type": "Parallelogram",
+          "ioKind": "Input",
+          "text": "player1_input",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "input_1794906551951",
+          "selected": false,
+          "prompt": "\"Acción del jugador 1: <W, A, S, D, E, Q, ESQ, Click Izquierdo>: \"",
+          "running": false
+        },
+        "assignment_1794906619987": {
+          "id": "assignment_1794906619987",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "loopInput:=True",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794906630711": {
+          "id": "output_1794906630711",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Error: Tecla Inválida, Intente de nuevo\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "select_1794906713550": {
+          "id": "select_1794906713550",
+          "type": "Diamond",
+          "kind": "Selection",
+          "text": "player1_posx < 10 and player1_posx > 0 and player2_posx < 10 and player2_posx > 0 and player1_posy < 10 and player1_posy > 0 and player2_posy < 10 and player2_posy > 0",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "yesId": "assignment_1794906793993",
+          "noId": "output_1794906814600",
+          "selected": false,
+          "running": false
+        },
+        "assign_1794906742866": {
+          "id": "assign_1794906742866",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "loopMov:=False",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "assign_1794906424400",
+          "selected": false,
+          "running": false
+        },
+        "assignment_1794906793993": {
+          "id": "assignment_1794906793993",
+          "type": "Rectangle",
+          "kind": "Assignment",
+          "text": "loopMov:=True",
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794906814600": {
+          "id": "output_1794906814600",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Error: No puedes salirte de los límites, Intente de nuevo\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": null,
+          "selected": false,
+          "running": false
+        },
+        "output_1794906977647": {
+          "id": "output_1794906977647",
+          "type": "Parallelogram",
+          "ioKind": "Output",
+          "text": "\"Jugada Exitosa!\"",
+          "newLine": true,
+          "H": 60,
+          "W": 90,
+          "X": 0,
+          "Y": 0,
+          "FP": {
+            "left": 0,
+            "right": 0,
+            "height": 0
+          },
+          "successorId": "end",
+          "selected": true
+        }
+      },
+      "startId": "start",
+      "endId": "end"
+    }
+  }
+}
