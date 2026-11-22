@@ -6,9 +6,9 @@ corchetes y borren estos comentarios. Los ejemplos usan el dominó solo como gu�
 
 # Puntos Suspensivos
 
-Proyecto integrador de primer nivel · Lógica de Programación · UIDE · Paralelo [X]
+Proyecto integrador de primer nivel · Lógica de Programación · UIDE · Paralelo [B]
 
-Juego por turnos para dos jugadores con modo local y, más adelante, modo multijugador cliente-servidor en red LAN.
+Juego de batalla de tanques para dos jugadores con modo local y, más adelante, modo multijugador cliente-servidor en red LAN.
 
 ## Integrantes
 
