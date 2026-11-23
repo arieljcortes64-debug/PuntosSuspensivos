@@ -64,3 +64,4 @@ citados en la sección «Créditos».
 | Herramienta | Para qué la usamos | Qué revisamos o cambiamos nosotros |
 |---|---|---|
 | Antigravity | Se uso para entender de mejor forma como funcionaba GitHub y como funcionaba una licencia MIT| Se creó un archivo LICENSE mediante una plantilla en GitHub al crear el repositorio |
+| Antigravity | Consultar porque ciertos errores sucedian dentro del código del archivo game_logic.py y como solucionarlos para adaptarse a los diagramas 2 y 3| Se entendio cada uno de los errores y los cambios que estos requerian para solucionarse y se los realizó dentro del código para luego ir probando que el programa funcione correctamente y valide cada una de las entradas del jugador. |
