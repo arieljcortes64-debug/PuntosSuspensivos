@@ -1,9 +1,3 @@
-<!--
-Plantilla del README.md · Proyecto integrador · Fase 3 (Lógica de Programación)
-Copien este archivo en la raíz del repositorio con el nombre README.md, completen los textos entre
-corchetes y borren estos comentarios. Los ejemplos usan el dominó solo como guía.
--->
-
 # Puntos Suspensivos
 
 Proyecto integrador de primer nivel · Lógica de Programación · UIDE · Paralelo [B]
@@ -39,14 +33,9 @@ python game_logic.py     (validación de la jugada y fin de la partida)
 
 | Diagrama de la Fase 2 | Archivo y líneas | Qué cambió al traducirlo |
 |---|---|---|
-| DF1 Partida completa (solo el menú) | [`juego.py`, líneas …] | [...] |
-| DF2 Validación de la jugada | [`game_logic.py`, líneas …] | [...] |
-| DF3 Fin de la partida | [`game_logic.py`, líneas …] | [...] |
-
-<!-- El bucle de turnos de DF1 (la partida completa) se programa en la Fase 4. -->
-
-<!-- Ejemplo (dominó): DF2 · game_logic.py, líneas 20-31 · El Loop de RAPTOR pasó a ser un while que se repite
-mientras el número de ficha no esté en la mano del jugador o no encaje en un extremo. -->
+| DF1 Partida completa (solo el menú y bucle del juego) | `juego.py`, líneas: 0 - 78 | Se modificaron varios problemas lógicos que se tenían en el diagrama original. Se invirtieron los condicionales del Loop en Raptor que determinaba si la partida empezaba o terminaba, se cambio el "or" por un "and". Se agrego la validación de la entrada del jugador al decidir si el disparo impacto o no, de esta forma, el programa solo continua si se eligue por un "Si" o un "No", caso contrario, se le pedirá al jugador elegir de nuevo. Se añadió un mensaje de cuantas vidas tiene cada jugador despues de cada turno. |
+| DF2 Validación de la jugada | `game_logic.py`, líneas: 0 - 100 | Se modifico el orden de la validación de la jugada, primero se validó la entrada del jugador, luego la posición que se le asignaba a este y finalmente la cantidad de vidas. Se Separo la validación de la entrada de cada jugador, así se revisaba que el input del jugador 1 este dentro de las opción y lo mismo con el 2do jugador. Así, el juego no continuará hasta que ambos tengan entradas válidas. Lo mismo ocurre con la posición y las vidas de cada jugador. Finalmente se añade un bucle al juego para poder salir o volver a jugar luego de cada partida.|
+| DF3 Fin de la partida | `game_logic.py`, líneas: 100 - 149 | Se válido la entrada de la asignación de vidas de cada jugador mediante la función "isdigit()" para verificar que sea una entrada válida. Finalmente se añade un bucle al juego para poder salir o volver a jugar luego de cada partida. |
 
 ## Video explicativo
 
@@ -74,4 +63,4 @@ citados en la sección «Créditos».
 
 | Herramienta | Para qué la usamos | Qué revisamos o cambiamos nosotros |
 |---|---|---|
-| [...] | [...] | [...] |
+| Antigravity | Se uso para entender de mejor forma como funcionaba GitHub y como funcionaba una licencia MIT| Se creó un archivo LICENSE mediante una plantilla en GitHub al crear el repositorio |
