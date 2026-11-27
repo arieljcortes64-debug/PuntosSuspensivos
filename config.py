@@ -1,0 +1,5 @@
+WINDOW_HEIGHT = 1920
+WINDOW_WIDTH = 1080
+FPS = 60
+TITLE = "Puntos Suspensivos"
+SPEED = 10
